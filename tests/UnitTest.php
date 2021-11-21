@@ -18,7 +18,7 @@ class UnitTest extends TestCase
   public function testMaterials(){
     $materialsUnit = $this->testMaterialsUnit();
     $materials = new Materials;
-    $materials->newMaterials('Papier', 'pap', $materialsUnit);
+    $materials->newMaterials('Papier', 'pap', $materialsUnit, 0);
     $this->assertEquals($materials->getMaterialsName(),'Papier');
     $this->assertEquals($materials->getMaterialsKod(),'pap');
     $this->assertEquals($materials->materialsUnit->getMaterialsUnitName(),'kilogram');
